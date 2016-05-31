@@ -1,4 +1,5 @@
 norm <- function(n,mean,sd,nos){
+  library(ggplot2)
   means <- rep(NA,nos)
   
   for(i in 1:nos){

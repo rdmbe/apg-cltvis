@@ -23,7 +23,7 @@ plothist <- function(samp.size,samp.num) {
 CLTdemo <-function() {
   pos <<-2
   meaninput <<- 0
-  stdinput <<- 1
+  stdinput <<- 1 
   winPlot <- tktoplevel()
   tkwm.title(winPlot ,"Central Limit Theorem" )
   setFrame <-tkframe(winPlot ,borderwidth=2)

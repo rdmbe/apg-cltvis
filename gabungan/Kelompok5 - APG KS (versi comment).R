@@ -126,6 +126,26 @@ CLTvis <-function() {
 
       par1 <<- 0
       par2 <<- 1
+#       labelTextNormM <- tclVar(paste("mean"))
+#       SliderValueNormM <- tclVar("0")
+#       SliderValueLabelNormM <- tklabel(winPlot$env$frm$frmDist, text=labelTextNormM)
+#       tkconfigure(SliderValueLabelNormM, textvariable=SliderValueNormM)
+#       sliderNormM <- tkscale(winPlot$env$frm$frmDist, from=-50, to=50, showvalue=T,variable=SliderValueNormM,
+#                              resolution=1, orient="horizontal",length=400)
+#       sliderNormM.label <- tk2label(winPlot$env$frm$frmDist, text = "Mean:")
+#
+#       labelTextNormSD <- tclVar(paste("standard deviation"))
+#       SliderValueNormSD <- tclVar("1")
+#       SliderValueLabelNormSD <- tklabel(winPlot$env$frm$frmDist, text=labelTextNormSD)
+#       tkconfigure(SliderValueLabelNormSD, textvariable=SliderValueNormSD)
+#       sliderNormSD <- tkscale(winPlot$env$frm$frmDist, from=1, to=30, showvalue=T,variable=SliderValueNormSD,
+#                               resolution=1, orient="horizontal",length=400)
+#       sliderNormSD.label <- tk2label(winPlot$env$frm$frmDist, text = "Standard Deviation:")
+#
+#       tkgrid(sliderNormM.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderNormM, columnspan = 5, padx = 10, pady = c(5,10))
+#       tkgrid(sliderNormSD.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderNormSD, columnspan = 5, padx = 10, pady = c(5,50))
 
       img <- tkrreplot(img,fun=normal.dist,1.4,1.4)
     } else if(dis == "Gamma") {
@@ -134,6 +154,25 @@ CLTvis <-function() {
 
       par1 <<- 1
       par2 <<- 1
+#       labelTextGamS <- tclVar(paste("shape"))
+#       SliderValueGamS <- tclVar("1")
+#       SliderValueLabelGamS <- tklabel(winPlot$env$frm$frmDist, text=labelTextGamS)
+#       tkconfigure(SliderValueLabelGamS, textvariable=SliderValueGamS)
+#       sliderGamS <- tkscale(winPlot$env$frm$frmDist, from=1, to=50, showvalue=T,variable=SliderValueGamS,
+#                             resolution=1, orient="horizontal",length=400)
+#       sliderGamS.label <- tk2label(winPlot$env$frm$frmDist, text = "Shape (Alpha):")
+#
+#       labelTextGamR <- tclVar(paste("rate"))
+#       SliderValueGamR <- tclVar("1")
+#       SliderValueLabelGamR <- tklabel(winPlot$env$frm$frmDist, text=labelTextGamR)
+#       tkconfigure(SliderValueLabelGamR, textvariable=SliderValueGamR)
+#       sliderGamR <- tkscale(winPlot$env$frm$frmDist, from=1, to=50, showvalue=T,variable=SliderValueGamR,
+#                             resolution=1, orient="horizontal",length=400)
+#       sliderGamR.label <- tk2label(winPlot$env$frm$frmDist, text = "Rate (Beta):")
+#       tkgrid(sliderGamS.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderGamS,columnspan = 5, padx = 10, pady = c(5,10))
+#       tkgrid(sliderGamR.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderGamR,columnspan = 5, padx = 10, pady = c(5,50))
 
       img <- tkrreplot(img,fun=gamma.dist,1.4,1.4)
     } else if(dis == "Beta") {
@@ -142,6 +181,25 @@ CLTvis <-function() {
 
       par1 <<- 1
       par2 <<- 1
+#       labelTextBeA <- tclVar(paste("alpha"))
+#       SliderValueBeA <- tclVar("1")
+#       SliderValueLabelBeA <- tklabel(winPlot$env$frm$frmDist, text=labelTextBeA)
+#       tkconfigure(SliderValueLabelBeA, textvariable=SliderValueBeA)
+#       sliderBeA <- tkscale(winPlot$env$frm$frmDist, from=1, to=50, showvalue=T,variable=SliderValueBeA,
+#                            resolution=1, orient="horizontal",length=400)
+#       sliderBeA.label <- tk2label(winPlot$env$frm$frmDist, text = "Alpha:")
+#
+#       labelTextBeB <- tclVar(paste("beta"))
+#       SliderValueBeB <- tclVar("1")
+#       SliderValueLabelBeB <- tklabel(winPlot$env$frm$frmDist, text=labelTextBeB)
+#       tkconfigure(SliderValueLabelBeB, textvariable=SliderValueBeB)
+#       sliderBeB <- tkscale(winPlot$env$frm$frmDist, from=1, to=50, showvalue=T,variable=SliderValueBeB,
+#                            resolution=1, orient="horizontal",length=400)
+#       sliderBeB.label <- tk2label(winPlot$env$frm$frmDist, text = "Beta:")
+#       tkgrid(sliderBeA.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderBeA, columnspan = 5, padx = 10, pady = c(5,10))
+#       tkgrid(sliderBeB.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderBeB,columnspan = 5, padx = 10, pady = c(5,50))
 
       img <- tkrreplot(img,fun=beta.dist,1.4,1.4)
     } else if(dis == "Uniform") {
@@ -150,12 +208,33 @@ CLTvis <-function() {
 
       par1 <<- 0
       par2 <<- 1
+#       labelTextUnifMin <- tclVar(paste("min"))
+#       SliderValueUnifMin <- tclVar("0")
+#       SliderValueLabelUnifMin <- tklabel(winPlot$env$frm$frmDist, text=labelTextUnifMin)
+#       tkconfigure(SliderValueLabelUnifMin, textvariable=SliderValueUnifMin)
+#       sliderUnifMin <- tkscale(winPlot$env$frm$frmDist, from=0, to=20, showvalue=T,
+#                                variable=SliderValueUnifMin, resolution=1, orient="horizontal",length=400)
+#       sliderUnifMin.label <- tk2label(winPlot$env$frm$frmDist, text = "Minimum:")
+#
+#       labelTextUnifMax <- tclVar(paste("max"))
+#       SliderValueUnifMax <- tclVar("1")
+#       SliderValueLabelUnifMax <- tklabel(winPlot$env$frm$frmDist, text=labelTextUnifMax)
+#       tkconfigure(SliderValueLabelUnifMax, textvariable=SliderValueUnifMax)
+#       sliderUnifMax <- tkscale(winPlot$env$frm$frmDist, from=1, to=20, showvalue=T,
+#                                variable=SliderValueUnifMax, resolution=1, orient="horizontal",length=400)
+#       sliderUnifMax.label <- tk2label(winPlot$env$frm$frmDist, text = "Maximum:")
+#       tkgrid(sliderUnifMin.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderUnifMin,columnspan = 5, padx = 10, pady = c(5,10))
+#       tkgrid(sliderUnifMax.label, columnspan = 5, padx = 10, pady = c(5,2))
+#       tkgrid(sliderUnifMax,columnspan = 5, padx = 10, pady = c(5,50))
 
       img <- tkrreplot(img,fun=uniform.dist,1.4,1.4)
     } else {
       tkmessageBox(title="Missing...", message = "Select a distribution!")
     }
     tkgrid(winPlot$env$frm$frmSamp,sticky="we",columnspan=1,padx=0,pady=0,rowspan=1,ipadx=0,ipady=0)
+    # tkpack(img, side = "right",expand=FALSE, fill = "both")
+    # tkpack.configure(winPlot$env$frm, img)
   }
 
   OKbutton <- tkbutton(winPlot$env$frm$frmDistSelect , text = "Set", foreground = "darkgreen",
